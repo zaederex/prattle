@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat</title>
+</head>
+<body>
+<input type="text" id="username" placeholder="Username"/>
+<button type="button" onclick="connect();">Connect</button>
+<textarea readonly="true" rows="10" cols="80" id="log"></textarea>
+<input type="text" size="51" id="msg" placeholder="Message"/>
+<input type="text" size="51" id="targetUser" placeholder="Send To User"/>
+<input type="text" size="51" id="targetGroup" placeholder="Send To Group"/>
+<input type="text" size="51" id="targetBroadcast" placeholder="Send Broadcast"/>
+<button type="button" onclick="send();">Send</button>
+</body>
+
+<script src="websocket.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</html>
